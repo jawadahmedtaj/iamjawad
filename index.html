@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Jawad Landing Page</title>
+    <title>Jawad Portfolio</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
@@ -31,7 +31,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -88,28 +87,48 @@
         </div>
       </div>
     </div>
-    <div id="about">
-      <div class="container">
-        <div class="row flex-column flex-md-row">
+    <div id="about" class="container d-flex">
+      <div class="row flex-column flex-md-row">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+          <h2 class="subHeadingText ">
+            About me
+            <span class="subHeadingStop d-flex d-inline-flex"></span>
+          </h2>
+          <p class="contentText py-4">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
           <div
-            class="col-6 d-flex flex-column justify-content-center order-md-0 order-1 align-items-center"
+            class="flex-row justify-content-md-start d-inline-flex justify-content-center"
           >
-            <h2 class="subHeadingText">
-              About me
-              <span class="subHeadingStop d-none d-lg-inline-block"></span>
-            </h2>
-            <p class="contentText d-none d-lg-block">
-              This is a simple hero unit, a simple jumbotron-style component
-              <br />
-              for calling extra attention to featured content or information.
-            </p>
-          </div>
-          <div
-            class="d-flex col-6 flex-column justify-content-center order-md-1 order-0"
-          >
-            <img src="assets/imgs/Section2ImageRight.png" alt="" />
+            <a
+              href="#"
+              id="normalBTN"
+              class="btn btn-lg contentText rounded-pill"
+              >View Portfolio</a
+            >
+            <a
+              href="#"
+              id="normalBTN"
+              class="btn btn-lg contentText rounded-pill ml-5"
+              >Download CV</a
+            >
           </div>
         </div>
+        <div class="d-lg-flex col-6 flex-column justify-content-center d-none">
+          <img src="assets/imgs/Section2ImageRight.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="portfolio1" class="container-fluid d-flex align-items-center">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <h2 class="subHeadingText ">
+            I Specialize In Building Designs
+            <span class="subHeadingStop d-flex d-inline-flex"></span>
+          </h2>
+        </div>
+        <div class="row flex-row flex-md-column"></div>
       </div>
     </div>
     <script src="assets/js/lib/jquery-3.4.1.min.js"></script>

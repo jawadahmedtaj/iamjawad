@@ -19,6 +19,11 @@ body {
     height: 767px;
 }
 
+#portfolio1 {
+    background-color: #fcfcfc;
+    height: 767px;
+}
+
 #contactMeBTN {
     text-align: center;
     background-color: #fd9a2a;
