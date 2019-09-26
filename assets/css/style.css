@@ -15,6 +15,10 @@ body {
     background-position: right;
 }
 
+#about {
+    height: 767px;
+}
+
 #contactMeBTN {
     text-align: center;
     background-color: #fd9a2a;
@@ -28,10 +32,20 @@ body {
 }
 
 .headingStop {
-    display: inline-block;
     height: 20px;
     width: 20px;
     background-color: #fd9a2a;
+}
+
+.subHeadingStop {
+    height: 10px;
+    width: 10px;
+    background-color: #fd9a2a;
+}
+
+.subHeadingText {
+    font-size: 35pt;
+    font-weight: 700;
 }
 
 .navbar {
