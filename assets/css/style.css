@@ -5,7 +5,7 @@ body {
 
 #landing {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: #fcfcfc;
@@ -21,7 +21,6 @@ body {
 
 #skills {
     background-color: #fcfcfc;
-
 }
 
 #contactMeBTN {
@@ -34,6 +33,27 @@ body {
     border: #0e128f 2px solid;
     text-align: center;
     color: #1b1b1b;
+}
+
+#portfolio {
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/Portfolio\ BG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#last {
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/LastSection.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lastList {
+    width: 100%;
+    list-style: none;
 }
 
 .card img {
@@ -64,6 +84,12 @@ body {
     font-weight: 700;
 }
 
+.contactHeading {
+    font-size: 30pt;
+    font-weight: 700;
+    color: #696565;
+}
+
 .navbar {
     padding: 41px 0px 41px 0px;
 }
@@ -81,4 +107,26 @@ body {
     font-size: 15pt;
     font-weight: 300;
     color: #696565;
+}
+
+.contactImgs {
+    position: absolute;
+    z-index: 1;
+    width: 85px;
+    height: 65px;
+    top: 15px;
+    left: 250px;
+}
+
+.contactBox {
+    position: relative;
+    width: 385px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0.695px 3.939px 21.33px 5.67px rgba(198, 198, 198, 0.08);
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
