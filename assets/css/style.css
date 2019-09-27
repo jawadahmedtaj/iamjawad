@@ -16,12 +16,12 @@ body {
 }
 
 #about {
-    height: 767px;
+    padding: 150px 0;
 }
 
-#portfolio1 {
+#skills {
     background-color: #fcfcfc;
-    height: 767px;
+
 }
 
 #contactMeBTN {
@@ -34,6 +34,17 @@ body {
     border: #0e128f 2px solid;
     text-align: center;
     color: #1b1b1b;
+}
+
+.card img {
+    width: 112px;
+    height: 112px;
+}
+
+.cardHeading {
+    font-weight: 500;
+    font-size: 20pt;
+    color: #696565;
 }
 
 .headingStop {
