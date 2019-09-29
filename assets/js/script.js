@@ -15,3 +15,17 @@ $(".contactBox").hover(function () {
     $(".contentText", this).toggleClass("contactBoxColor");
     $(".contactImgs", this).fadeToggle(0);
 })
+
+// $(".subHeadingStop").hover(function () {
+//         $(this).fadeToggle("slow", function () {
+//             $(this).css("display", "none");
+//             $(this).removeClass("d-inline-flex");
+//             $(this).removeClass("d-flex");
+//         });
+//     },
+//     function () {
+//         $(this).fadeToggle("slow", function () {
+//             $(this).addClass("d-inline-flex");
+//             $(this).addClass("d-flex");
+//         })
+//     })
