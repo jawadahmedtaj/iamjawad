@@ -38,4 +38,4 @@ $(".contactBox").hover(function() {
 //   }
 // });
 
-$(".navbar-toggler-icon").click(function() {});
+// $(".navbar-toggler-icon").click(function() {});

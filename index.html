@@ -17,7 +17,10 @@
     <title>Jawad Portfolio</title>
   </head>
   <body>
-    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg navbar-light fixed-top px-3 px-lg-0"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">Jawad</a>
         <button
@@ -33,19 +36,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item navbarPadding">
               <a class="nav-link" href="#"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item navbarPadding">
               <a class="nav-link" href="#about">About Me</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navbarPadding">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item navbarPadding">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -82,7 +85,7 @@
               <div class="col-lg-3">
                 <a
                   href="#portfolio"
-                  id="normalBTN"
+                  id="normalHeaderBTN"
                   class="btn btn-lg contentText rounded-pill ml-lg-5 mt-3 mt-lg-0"
                   >View Portfolio</a
                 >
@@ -109,14 +112,14 @@
           >
             <a
               href="#portfolio"
-              id="normalBTN"
-              class="btn btn-lg contentText rounded-pill"
+              id=""
+              class="btn btn-lg contentText rounded-pill normalBTN"
               >View Portfolio</a
             >
             <a
               href="assets/CV.pdf"
-              id="normalBTN"
-              class="btn btn-lg contentText rounded-pill ml-5"
+              id=""
+              class="btn btn-lg contentText rounded-pill ml-5 normalBTN"
               >Download CV</a
             >
           </div>
@@ -194,7 +197,7 @@
         </div>
       </div>
     </div>
-    <div id="portfolio" class="container-fluid d-flex align-items-center">
+    <div id="portfolio" class="container-fluid d-flex align-items-center py-5">
       <div id="portfolioContainer" class="container py-5">
         <img
           class="d-none d-lg-block"
@@ -505,7 +508,7 @@
           <h2 class="subHeadingText text-white">
             Let's Talk?
           </h2>
-          <h1 class="subHeadingText text-white py-5">
+          <h1 id="lastHeadingText" class="text-white py-5">
             Jawad Ahmed<span class="subHeadingStop d-flex d-inline-flex"></span>
           </h1>
           <ul
