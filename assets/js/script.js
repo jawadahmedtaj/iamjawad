@@ -1,20 +1,20 @@
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $("#mainNavbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    });
-})
+$(function() {
+  $(document).scroll(function() {
+    var $nav = $("#mainNavbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});
 
-$(".card").hover(function () {
-    $(this).toggleClass("skillsItemsBorder");
-})
+$(".card").hover(function() {
+  $(this).toggleClass("skillsItemsBorder");
+});
 
-$(".contactBox").hover(function () {
-    $(this).toggleClass("contactBoxColor");
-    $(".contactHeading", this).toggleClass("contactBoxColor");
-    $(".contentText", this).toggleClass("contactBoxColor");
-    $(".contactImgs", this).fadeToggle(0);
-})
+$(".contactBox").hover(function() {
+  $(this).toggleClass("contactBoxColor");
+  $(".contactHeading", this).toggleClass("contactBoxColor");
+  $(".contentText", this).toggleClass("contactBoxColor");
+  $(".contactImgs", this).fadeToggle(0);
+});
 
 // $(".subHeadingStop").hover(function () {
 //         $(this).fadeToggle("slow", function () {
@@ -29,3 +29,13 @@ $(".contactBox").hover(function () {
 //             $(this).addClass("d-flex");
 //         })
 //     })
+
+// $(window).resize(function() {
+//   if ($(window).width() < 960) {
+//     $(".nav-item").toggleClass("navbarPadding");
+//     $(".nav-link").toggleClass("text-white");
+//   } else {
+//   }
+// });
+
+$(".navbar-toggler-icon").click(function() {});
