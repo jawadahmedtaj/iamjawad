@@ -1,8 +1,13 @@
 <template>
   <div id="app">
-    <LeftMenu></LeftMenu>
-
-    <router-view />
+    <v-row>
+      <v-col :sm="2">
+        <LeftMenu></LeftMenu>
+      </v-col>
+      <v-col :sm="10">
+        <router-view />
+      </v-col>
+    </v-row>
   </div>
 </template>
 
