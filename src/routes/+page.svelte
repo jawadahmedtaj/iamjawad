@@ -21,19 +21,19 @@
 			'.waveIcon',
 			{
 				rotate: [0, 5, -5, 0],
-				x: [0, 5, -5, 0],
+				x: [0, 5, -5, 0]
 			},
 			{
 				duration: 1,
 				repeat: Infinity,
-				easing: "ease-out",
-				direction: "alternate-reverse"
+				easing: 'ease-out',
+				direction: 'alternate-reverse'
 			}
 		);
 	});
 </script>
 
-<div id='top' class="container grid h-screen mx-auto place-items-center justify-items-start">
+<div id="top" class="container grid h-screen mx-auto place-items-center justify-items-start">
 	<div class="flex flex-col space-y-10 text-2xl mainHeadings">
 		<h2 class="font-bold h1">Hello <span class="waveIcon">👋</span></h2>
 		<h4 class="h2">I'm Jawad Ahmed, <strong>Frontend Developer</strong></h4>
@@ -41,23 +41,13 @@
 	</div>
 </div>
 
-<div class="container grid w-full h-screen mx-auto overflow-x-auto place-items-center justify-items-start projectsSection">
-	<div class="flex overflow-x-scroll overflow-y-hidden projectsContainer">
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
-	</div>
+<div class="container grid h-screen mx-auto place-items-center" id="work">
+	<div class="p-4 card h-96 w-96">Basic</div>
+	<div class="p-4 card h-96 w-96">Basic</div>
+	<div class="p-4 card h-96 w-96">Basic</div>
 </div>
 
-<div class="container grid h-screen mx-auto place-items-center justify-items-start">
-	Test
-</div>
+<div class="container grid h-screen mx-auto place-items-center justify-items-start">Test</div>
 
 <style lang="postcss">
 </style>

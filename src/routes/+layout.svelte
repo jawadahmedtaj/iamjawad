@@ -41,7 +41,7 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled" >About</a>
-				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled">Work</a>
+				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled">Work</a>
 				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled">Contact</a>
 				<LightSwitch />
 			</svelte:fragment>
