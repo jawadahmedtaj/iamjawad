@@ -41,8 +41,22 @@
 	</div>
 </div>
 
-<div class="container h-screen">
-	Container
+<div class="container grid w-full h-screen mx-auto overflow-x-auto place-items-center justify-items-start projectsSection">
+	<div class="flex overflow-x-scroll overflow-y-hidden projectsContainer">
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+		<div class="p-4 card h-96 w-96 individualCard">Basic</div>
+	</div>
+</div>
+
+<div class="container grid h-screen mx-auto place-items-center justify-items-start">
+	Test
 </div>
 
 <style lang="postcss">
