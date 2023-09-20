@@ -1,0 +1,1 @@
+<div class="grid h-screen place-content-center">Full project list coming soon</div>

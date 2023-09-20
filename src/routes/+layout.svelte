@@ -8,6 +8,7 @@
 	import { onMount } from 'svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	import { animate } from 'motion';
+	import 'iconify-icon';
 
 	onMount(() => {
 		const header = document.querySelector('.headerBar');

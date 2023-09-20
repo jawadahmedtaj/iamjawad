@@ -29,6 +29,7 @@
   "dependencies": {
     "@floating-ui/dom": "1.5.1",
     "firebase": "^9.23.0",
+    "iconify-icon": "^1.0.8",
     "motion": "^10.16.2",
     "split-type": "^0.3.3",
     "sveltefire": "^0.4.2"
