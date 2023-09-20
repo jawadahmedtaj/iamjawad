@@ -18,14 +18,14 @@
 
 	const handleAnchorClick = (event) => {
 		event.preventDefault();
-		const link = event.currentTarget
-		const anchorId = new URL(link.href).hash.replace('#', '')
-		const anchor = document.getElementById(anchorId)
+		const link = event.currentTarget;
+		const anchorId = new URL(link.href).hash.replace('#', '');
+		const anchor = document.getElementById(anchorId);
 		anchor.scrollIntoView({
 			behavior: 'smooth',
 			block: 'start'
-		})
-	}
+		});
+	};
 </script>
 
 <!-- App Shell -->
@@ -38,10 +38,12 @@
 			class="container flex justify-start mx-auto"
 		>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Jawad A.</strong>
+				<a href="/" >
+					<strong class="text-xl uppercase"> Jawad A. </strong>
+				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled" >About</a>
+				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled">About</a>
 				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled">Work</a>
 				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled">Contact</a>
 				<LightSwitch />

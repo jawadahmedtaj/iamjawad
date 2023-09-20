@@ -68,7 +68,8 @@
 		nuxt: 'logos:nuxt-icon',
 		css: 'logos:css-3',
 		html: 'logos:html-5',
-		js: 'logos:javascript'
+		js: 'logos:javascript',
+		pwa: 'logos:pwa'
 	};
 
 	const projects = [
@@ -79,7 +80,7 @@
 				en: 'A productivity app that helps you track your time and stay focused on your goals. All data is stored locally, no backend.',
 				de: ''
 			},
-			technologyStack: ['svelte', 'html', 'css', 'js', 'tailwindcss'],
+			technologyStack: ['svelte', 'html', 'css', 'js', 'tailwindcss', 'pwa'],
 			deployment: { link: 'https://introspectify.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/introspectify', icon: 'github' }
 		},
@@ -90,7 +91,7 @@
 				en: 'A simple chat application made using Vue 3/Nuxt 3 with firebase integration',
 				de: ''
 			},
-			technologyStack: ['vue', 'nuxt', 'html', 'css', 'js', 'tailwindcss', 'vueuse', 'firebase'],
+			technologyStack: ['vue', 'nuxt', 'html', 'css', 'js', 'tailwindcss', 'vueuse', 'firebase', 'pwa'],
 			deployment: { link: 'https://chat-app-jawad.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/chat-app-nuxt', icon: 'github' }
 		},
@@ -176,7 +177,7 @@
 	</a>
 </div>
 
-<div class="container grid mx-auto">Test</div>
+<!-- <div class="container grid mx-auto">Test</div> -->
 
 <style>
 </style>
