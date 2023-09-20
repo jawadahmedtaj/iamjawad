@@ -160,7 +160,7 @@
 	{#each projects as { title, image, description, deployment, codeLink, technologyStack }, idx (idx)}
 		{#if idx % 2 === 0}
 			<div class="grid grid-flow-col grid-cols-2 projectDetail" class:mt-4={idx > 0}>
-				<div class="p-4 card">
+				<div class="self-center p-4 card">
 					<img src={image} class="object-contain" alt="..." />
 				</div>
 				<div class="grid justify-start grid-flow-row gap-0 ml-2 place-content-center">
@@ -182,7 +182,7 @@
 							</Tooltip>
 						{/if}
 					</div>
-					<div class="grid items-center justify-start grid-flow-col gap-1">
+					<div class="grid items-center justify-start grid-flow-col gap-1 pt-2">
 						{#each technologyStack as icon}
 							<Tooltip content={technologyIcons[icon].title}>
 								<iconify-icon icon={technologyIcons[icon].icon} />
@@ -212,7 +212,7 @@
 							</Tooltip>
 						{/if}
 					</div>
-					<div class="grid items-center justify-start grid-flow-col gap-1">
+					<div class="grid items-center justify-start grid-flow-col gap-1 pt-2">
 						{#each technologyStack as icon}
 							<Tooltip content={technologyIcons[icon].title}>
 								<iconify-icon icon={technologyIcons[icon].icon} />
@@ -220,7 +220,7 @@
 						{/each}
 					</div>
 				</div>
-				<div class="p-4 card">
+				<div class="self-center p-4 card">
 					<img src={image} class="object-contain" alt="..." />
 				</div>
 			</div>
