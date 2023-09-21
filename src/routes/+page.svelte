@@ -158,73 +158,41 @@
 
 <div class="container grid pb-5 mx-auto place-items-center sectionContainer" id="work">
 	{#each projects as { title, image, description, deployment, codeLink, technologyStack }, idx (idx)}
-		{#if idx % 2 === 0}
-			<div class="grid grid-flow-col grid-cols-2 projectDetail" class:mt-4={idx > 0}>
-				<div class="self-center p-4 card">
-					<img src={image} class="object-contain" alt="..." />
+		<div class="grid grid-flow-col grid-cols-2 projectDetail" class:mt-4={idx > 0}>
+			<div class="self-center p-4 card" class:order-2={idx % 2 !== 0}>
+				<img src={image} class="object-contain" alt="..." />
+			</div>
+			<div
+				class="grid justify-start grid-flow-row gap-0 ml-2 place-content-center"
+				class:order-1={idx % 2 !== 0}
+			>
+				<div class="self-center h2">{title}</div>
+				<div class="self-center pt-2 h4">{description.en}</div>
+				<div class="grid justify-start grid-flow-col pt-2 text-2xl">
+					{#if deployment.link}
+						<Tooltip content="Live Demo">
+							<a href={deployment.link} target="_blank" class="btn variant-filled-primary">
+								<iconify-icon icon={technologyIcons[deployment.icon].icon} />
+							</a>
+						</Tooltip>
+					{/if}
+					{#if codeLink.link}
+						<Tooltip content="Code">
+							<a href={codeLink.link} target="_blank" class="ml-2 btn variant-filled-primary">
+								<iconify-icon icon={technologyIcons[codeLink.icon].icon} />
+							</a>
+						</Tooltip>
+					{/if}
 				</div>
-				<div class="grid justify-start grid-flow-row gap-0 ml-2 place-content-center">
-					<div class="self-center h2">{title}</div>
-					<div class="self-center pt-2 h4">{description.en}</div>
-					<div class="grid justify-start grid-flow-col pt-2 text-2xl">
-						{#if deployment.link}
-							<Tooltip content={technologyIcons[deployment.icon].title}>
-								<a href={deployment.link} target="_blank" class="btn variant-filled-primary">
-									<iconify-icon icon={technologyIcons[deployment.icon].icon} />
-								</a>
-							</Tooltip>
-						{/if}
-						{#if codeLink.link}
-							<Tooltip content={technologyIcons[codeLink.icon].title}>
-								<a href={codeLink.link} target="_blank" class="ml-2 btn variant-filled-primary">
-									<iconify-icon icon={technologyIcons[codeLink.icon].icon} />
-								</a>
-							</Tooltip>
-						{/if}
-					</div>
-					<div class="grid items-center justify-start grid-flow-col gap-1 pt-2">
-						{#each technologyStack as icon}
-							<Tooltip content={technologyIcons[icon].title}>
-								<iconify-icon icon={technologyIcons[icon].icon} />
-							</Tooltip>
-						{/each}
-					</div>
+				<div class="grid items-center justify-start grid-flow-col gap-1 pt-2">
+					{#each technologyStack as icon}
+						<Tooltip content={technologyIcons[icon].title}>
+							<iconify-icon icon={technologyIcons[icon].icon} />
+						</Tooltip>
+					{/each}
 				</div>
 			</div>
-		{:else}
-			<div class="grid grid-flow-col grid-cols-2 projectDetail" class:mt-4={idx > 0}>
-				<div class="grid justify-start grid-flow-row gap-0 ml-2 place-content-center">
-					<div class="self-center h2">{title}</div>
-					<div class="self-center pt-2 h4">{description.en}</div>
-					<div class="grid justify-start grid-flow-col pt-2 text-2xl">
-						{#if deployment.link}
-							<Tooltip content={technologyIcons[deployment.icon].title}>
-								<a href={deployment.link} target="_blank" class="btn variant-filled-primary">
-									<iconify-icon icon={technologyIcons[deployment.icon].icon} />
-								</a>
-							</Tooltip>
-						{/if}
-						{#if codeLink.link}
-							<Tooltip content={technologyIcons[codeLink.icon].title}>
-								<a href={codeLink.link} target="_blank" class="ml-2 btn variant-filled-primary">
-									<iconify-icon icon={technologyIcons[codeLink.icon].icon} />
-								</a>
-							</Tooltip>
-						{/if}
-					</div>
-					<div class="grid items-center justify-start grid-flow-col gap-1 pt-2">
-						{#each technologyStack as icon}
-							<Tooltip content={technologyIcons[icon].title}>
-								<iconify-icon icon={technologyIcons[icon].icon} />
-							</Tooltip>
-						{/each}
-					</div>
-				</div>
-				<div class="self-center p-4 card">
-					<img src={image} class="object-contain" alt="..." />
-				</div>
-			</div>
-		{/if}
+		</div>
 	{/each}
 
 	<a
