@@ -145,16 +145,16 @@
 	</div>
 </div>
 <div class="container grid grid-flow-row mx-auto pb-9 contactSection">
-	<div class="grid justify-between grid-flow-col pb-9">
+	<div class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col pb-9 place-items-center">
 		<p class="text-4xl font-semibold">Capabilities</p>
-		<div class="grid grid-cols-3 gap-1">
+		<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 			{#each capabilities as capability, idx (idx)}
 				<button class="btn variant-outline-primary">{capability}</button>
 			{/each}
 		</div>
 	</div>
-	<p class="text-4xl font-semibold">Contact</p>
-	<div id="contact" class="grid justify-between grid-flow-col">
+	<p class="text-4xl font-semibold text-center sm:text-start">Contact</p>
+	<div id="contact" class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col">
 		<div class="grid grid-flow-row">
 			<p class="pt-2">Need to get in touch?</p>
 			<p class="pt-2 text-xs">
