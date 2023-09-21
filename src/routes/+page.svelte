@@ -42,7 +42,54 @@
 				}
 			);
 		});
+
+		const aboutText = document.querySelector('.aboutTexts').querySelectorAll('p');
+
+		inView(aboutText, () => {
+			const leave = animate(
+				aboutText,
+				{ opacity: [0, 1], y: [-10, 0] },
+				{ duration: 0.5, delay: stagger(0.1) }
+			);
+		});
+
+		const contactSection = document.querySelector('.contactSection');
+
+		inView(contactSection, () => {
+			const leave = animate(contactSection, { opacity: [0, 1], y: [-25, 0] }, { duration: 1 });
+		});
 	});
+
+	const capabilities = [
+		'Mentorship',
+		'Team player',
+		'Communication',
+		'Problem solving',
+		'Time management'
+	];
+
+	const socials = [
+		{
+			name: 'X (a.k.a Twitter)',
+			icon: 'mdi:twitter',
+			link: 'https://twitter.com/JawadAh57345713'
+		},
+		{
+			name: 'Github',
+			icon: 'mdi:github',
+			link: 'https://github.com/jawadahmedtaj'
+		},
+		{
+			name: 'Linkedin',
+			icon: 'mdi:linkedin',
+			link: 'https://www.linkedin.com/in/jawad-ahmed-1884b45b/'
+		},
+		{
+			name: 'Instagram',
+			icon: 'mdi:instagram',
+			link: 'https://www.instagram.com/illegalsnowman/'
+		}
+	];
 </script>
 
 <div id="top" class="container grid h-screen mx-auto place-items-center justify-items-start">
@@ -59,40 +106,76 @@
 	<p class="text-2xl font-semibold">About</p>
 	<div class="pt-10 text-center aboutSection">
 		<img src="/images/self.png" class="hidden float-left object-contain w-52 md:block" alt="..." />
-		<div class="text-justify text-md lg:text-xl">
-			<p>With over seven years of experience in the field, I have honed my skills and expertise to deliver exceptional results in the world of remote work. My journey in the digital realm has been nothing short of exhilarating, and I am thrilled to share my work and experiences with you.</p>
-			<p class="mt-3">Throughout my career, I have had the privilege of working remotely on a wide range of projects, spanning various industries and technologies. From the comfort of my home office, I have collaborated with teams across the globe, delivering innovative solutions that have left a lasting impact.</p>
-			<p class="mt-3">One of the most rewarding aspects of my career has been witnessing the projects I've contributed to being embraced by hundreds of users. Knowing that my work has made a positive difference in the lives of people around the world is truly fulfilling. It's a testament to the dedication and passion I pour into every project I undertake.</p>
-			<p class="mt-3">As you explore my portfolio, you will find a diverse collection of work, each project a testament to my commitment to excellence and my ability to adapt to different challenges. From web applications to mobile apps, from design to development, I've had the opportunity to explore various facets of the digital landscape.</p>
-			<p class="mt-3">I believe that innovation is a continuous journey, and I am excited to continue pushing the boundaries of what's possible in the world of technology. Whether you're here to learn more about my past work, explore potential collaboration opportunities, or simply get inspired, I invite you to dive into my portfolio and join me on this exciting journey.</p>
-			<p class="mt-3">Thank you for visiting, and I look forward to connecting with you. Together, we can create something extraordinary.</p>
-			<a href="mailto:jawadahmedtaj@gmail.com" target="_blank" class="mt-3">jawadahmedtaj@gmail.com</a>
+		<div class="text-justify text-md lg:text-xl aboutTexts">
+			<p>
+				With over seven years of experience in the field, I have honed my skills and expertise to
+				deliver exceptional results in the world of remote work. My journey in the digital realm has
+				been nothing short of exhilarating, and I am thrilled to share my work and experiences with
+				you.
+			</p>
+			<p class="mt-3">
+				Throughout my career, I have had the privilege of working remotely on a wide range of
+				projects, spanning various industries and technologies. From the comfort of my home office,
+				I have collaborated with teams across the globe, delivering innovative solutions that have
+				left a lasting impact.
+			</p>
+			<p class="mt-3">
+				One of the most rewarding aspects of my career has been witnessing the projects I've
+				contributed to being embraced by hundreds of users. Knowing that my work has made a positive
+				difference in the lives of people around the world is truly fulfilling. It's a testament to
+				the dedication and passion I pour into every project I undertake.
+			</p>
+			<p class="mt-3">
+				As you explore my portfolio, you will find a diverse collection of work, each project a
+				testament to my commitment to excellence and my ability to adapt to different challenges.
+				From web applications to mobile apps, from design to development, I've had the opportunity
+				to explore various facets of the digital landscape.
+			</p>
+			<p class="mt-3">
+				I believe that innovation is a continuous journey, and I am excited to continue pushing the
+				boundaries of what's possible in the world of technology. Whether you're here to learn more
+				about my past work, explore potential collaboration opportunities, or simply get inspired, I
+				invite you to dive into my portfolio and join me on this exciting journey.
+			</p>
+			<p class="mt-3">
+				Thank you for visiting, and I look forward to connecting with you. Together, we can create
+				something extraordinary.
+			</p>
 		</div>
 	</div>
 </div>
-<!-- <div class="container grid grid-flow-row mx-auto">
-	<div class="grid justify-between grid-flow-col">
-		<p>Capabilities</p>
-		<p>Capabilities</p>
-	</div>
-	<p>Contact</p>
-	<div class="grid justify-between grid-flow-col">
-		<div class="grid grid-flow-row">
-			<p>Developer?</p>
-			<p>Developer?</p>
-		</div>
-		<div class="grid grid-flow-row">
-			<p>Elsewhere?</p>
-			<p>Elsewhere?</p>
+<div class="container grid grid-flow-row mx-auto pb-9 contactSection">
+	<div class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col pb-9 place-items-center">
+		<p class="text-4xl font-semibold">Capabilities</p>
+		<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+			{#each capabilities as capability, idx (idx)}
+				<button class="btn variant-outline-primary">{capability}</button>
+			{/each}
 		</div>
 	</div>
-</div> -->
+	<p class="text-4xl font-semibold text-center sm:text-start">Contact</p>
+	<div id="contact" class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col">
+		<div class="grid grid-flow-row">
+			<p class="pt-2">Need to get in touch?</p>
+			<p class="pt-2 text-xs">
+				Shoot me a note with your project details at <a
+					href="mailto:jawadahmedtaj@gmail.com"
+					target="_blank">jawadahmedtaj@gmail.com</a
+				>
+			</p>
+		</div>
+		<div class="grid grid-cols-1 gap-1 md:grid-cols-2 xl:grid-cols-4">
+			{#each socials as social, idx (idx)}
+				<button class="btn variant-outline-primary">
+					<a href={social.link} target="_blank">
+						<iconify-icon icon={social.icon} />
+						{social.name}
+					</a>
+				</button>
+			{/each}
+		</div>
+	</div>
+</div>
 
 <style>
-	/* .aboutSection {
-		background-image: url('/images/self.png');
-		background-position: -70% 50%;
-		background-repeat: no-repeat;
-		background-size: 75%;
-	} */
 </style>
