@@ -1,1 +1,5 @@
-<div class="grid h-screen place-content-center">Full project list coming soon</div>
+<script>
+	import Projects from "../../lib/components/projects.svelte";
+</script>
+
+<Projects showLink={false}/>
