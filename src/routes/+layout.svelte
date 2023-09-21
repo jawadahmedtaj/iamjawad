@@ -38,12 +38,12 @@
 			class="container flex justify-start mx-auto"
 		>
 			<svelte:fragment slot="lead">
-				<a href="/" >
+				<a href="/">
 					<strong class="text-xl uppercase"> Jawad A. </strong>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled">About</a>
+				<a href="#about" on:click={handleAnchorClick} class="p-2 badge variant-filled">About</a>
 				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled">Work</a>
 				<a href="#top" on:click={handleAnchorClick} class="p-2 badge variant-filled">Contact</a>
 				<LightSwitch />
