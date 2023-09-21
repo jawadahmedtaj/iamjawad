@@ -14,7 +14,7 @@
 				{ duration: 1.5 }
 			);
 
-			return () => leaveProject.stop();
+			// return () => leaveProject.stop();
 		});
 		if (showLink) {
 			const allProjects = document.querySelector('.allProjects');
@@ -24,7 +24,7 @@
 					{ opacity: [0, 1], y: [-50, 0] },
 					{ duration: 1.5 }
 				);
-				return () => leaveProject.stop();
+				// return () => leaveProject.stop();
 			});
 			animate(
 				allProjects,

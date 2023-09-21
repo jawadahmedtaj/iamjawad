@@ -38,7 +38,7 @@
 			class="container flex justify-start mx-auto"
 		>
 			<svelte:fragment slot="lead">
-				<a href="/" >
+				<a href="/">
 					<strong class="text-xl uppercase"> Jawad A. </strong>
 				</a>
 			</svelte:fragment>
