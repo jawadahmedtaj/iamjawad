@@ -20,17 +20,17 @@ export const Winter = {
 		"--on-error": "0 0 0",
 		"--on-surface": "255 255 255",
 		// =~= Theme Colors  =~=
-		// primary | #c9c9c9 
-		"--color-primary-50": "247 247 247", // #f7f7f7
-		"--color-primary-100": "244 244 244", // #f4f4f4
-		"--color-primary-200": "242 242 242", // #f2f2f2
-		"--color-primary-300": "233 233 233", // #e9e9e9
-		"--color-primary-400": "217 217 217", // #d9d9d9
-		"--color-primary-500": "201 201 201", // #c9c9c9
-		"--color-primary-600": "181 181 181", // #b5b5b5
-		"--color-primary-700": "151 151 151", // #979797
-		"--color-primary-800": "121 121 121", // #797979
-		"--color-primary-900": "98 98 98", // #626262
+		// primary | #8f8f8f 
+		"--color-primary-50": "238 238 238", // #eeeeee
+		"--color-primary-100": "233 233 233", // #e9e9e9
+		"--color-primary-200": "227 227 227", // #e3e3e3
+		"--color-primary-300": "210 210 210", // #d2d2d2
+		"--color-primary-400": "177 177 177", // #b1b1b1
+		"--color-primary-500": "143 143 143", // #8f8f8f
+		"--color-primary-600": "129 129 129", // #818181
+		"--color-primary-700": "107 107 107", // #6b6b6b
+		"--color-primary-800": "86 86 86", // #565656
+		"--color-primary-900": "70 70 70", // #464646
 		// secondary | #86c1c6 
 		"--color-secondary-50": "237 246 246", // #edf6f6
 		"--color-secondary-100": "231 243 244", // #e7f3f4
@@ -86,16 +86,16 @@ export const Winter = {
 		"--color-error-700": "167 101 97", // #a76561
 		"--color-error-800": "134 80 77", // #86504d
 		"--color-error-900": "109 66 63", // #6d423f
-		// surface | #ffffff 
-		"--color-surface-50": "255 255 255", // #ffffff
-		"--color-surface-100": "255 255 255", // #ffffff
-		"--color-surface-200": "255 255 255", // #ffffff
-		"--color-surface-300": "255 255 255", // #ffffff
-		"--color-surface-400": "255 255 255", // #ffffff
-		"--color-surface-500": "255 255 255", // #ffffff
-		"--color-surface-600": "230 230 230", // #e6e6e6
-		"--color-surface-700": "191 191 191", // #bfbfbf
-		"--color-surface-800": "153 153 153", // #999999
-		"--color-surface-900": "125 125 125", // #7d7d7d
+		// surface | #786868 
+		"--color-surface-50": "235 232 232", // #ebe8e8
+		"--color-surface-100": "228 225 225", // #e4e1e1
+		"--color-surface-200": "221 217 217", // #ddd9d9
+		"--color-surface-300": "201 195 195", // #c9c3c3
+		"--color-surface-400": "161 149 149", // #a19595
+		"--color-surface-500": "120 104 104", // #786868
+		"--color-surface-600": "108 94 94", // #6c5e5e
+		"--color-surface-700": "90 78 78", // #5a4e4e
+		"--color-surface-800": "72 62 62", // #483e3e
+		"--color-surface-900": "59 51 51", // #3b3333
 	}
 }
