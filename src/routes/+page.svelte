@@ -70,7 +70,7 @@
 
 	const socials = [
 		{
-			name: 'X (a.k.a Twitter)',
+			name: 'Twitter',
 			icon: 'mdi:twitter',
 			link: 'https://twitter.com/JawadAh57345713'
 		},
@@ -100,7 +100,7 @@
 	</div>
 </div>
 
-<Projects />
+<Projects quantity={4} />
 
 <div id="about" class="container grid grid-flow-row mx-auto pb-9 place-content-start aboutSection">
 	<p class="text-2xl font-semibold">About</p>
@@ -149,7 +149,7 @@
 		<p class="text-4xl font-semibold">Capabilities</p>
 		<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 			{#each capabilities as capability, idx (idx)}
-				<button class="btn variant-outline-primary">{capability}</button>
+				<button class="btn variant-outline-primary w-44">{capability}</button>
 			{/each}
 		</div>
 	</div>
@@ -166,7 +166,7 @@
 		</div>
 		<div class="grid grid-cols-1 gap-1 md:grid-cols-2 xl:grid-cols-4">
 			{#each socials as social, idx (idx)}
-				<button class="btn variant-outline-primary">
+				<button class="w-44 place-self-center btn variant-outline-primary">
 					<a href={social.link} target="_blank">
 						<iconify-icon icon={social.icon} />
 						{social.name}
