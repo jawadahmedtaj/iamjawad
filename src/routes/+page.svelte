@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { animate, stagger, inView } from 'motion';
 	import Projects from '../lib/components/projects.svelte';
+	import { t } from '$lib/translations';
 
 	onMount(() => {
 		const text = new SplitType('.mainHeadings');
@@ -94,7 +95,7 @@
 
 <div id="top" class="container grid h-screen mx-auto place-items-center justify-items-start">
 	<div class="flex flex-col space-y-10 text-2xl mainHeadings">
-		<h2 class="font-bold h1">Hello <span class="waveIcon">👋</span></h2>
+		<h2 class="font-bold h1">{$t('common.hello')} <span class="waveIcon">👋</span></h2>
 		<h4 class="h2">I'm Jawad Ahmed, <strong>Frontend Developer</strong></h4>
 		<h5 class="h3">I build accessible, inclusive products and digital experiences for the web.</h5>
 	</div>
@@ -145,7 +146,9 @@
 	</div>
 </div>
 <div class="container grid grid-flow-row mx-auto pb-9 contactSection">
-	<div class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col pb-9 place-items-center">
+	<div
+		class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col pb-9 place-items-center"
+	>
 		<p class="text-4xl font-semibold">Capabilities</p>
 		<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 			{#each capabilities as capability, idx (idx)}

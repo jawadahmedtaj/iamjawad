@@ -9,6 +9,7 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	import { animate } from 'motion';
 	import 'iconify-icon';
+	import { locales, locale } from '$lib/translations';
 
 	onMount(() => {
 		const header = document.querySelector('.headerBar');
@@ -47,6 +48,16 @@
 				<a href="#about" on:click={handleAnchorClick} class="p-2 badge variant-filled">About</a>
 				<a href="#contact" on:click={handleAnchorClick} class="p-2 badge variant-filled">Contact</a>
 				<LightSwitch />
+				{#if $locale === 'en'}
+					<button class="badge-icon variant-filled-primary" on:click={() => $locale = 'de'}>
+						<iconify-icon icon="emojione:flag-for-germany" />
+					</button>
+				{:else}
+					<button class="badge-icon variant-filled-primary" on:click={() => $locale = 'en'}>
+						<iconify-icon icon="emojione:flag-for-united-kingdom" />
+					</button>
+				{/if}
+				<p>{$locale}</p>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

@@ -61,7 +61,7 @@
 		express: { icon: 'skill-icons:expressjs-light', title: 'Express'}
 	};
 
-	export let projects = [
+	let projects = [
 		{
 			title: 'C3-CRM',
 			image: '/images/projects/C3CRM.png',
