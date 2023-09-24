@@ -4,6 +4,7 @@
 	import { Tooltip } from '@svelte-plugins/tooltips';
 
 	export let showLink = true;
+	export let quantity = undefined;
 
 	onMount(() => {
 		const projectCards = document.querySelectorAll('.projectDetail');
@@ -123,10 +124,12 @@
 			codeLink: { link: 'https://github.com/jawadahmedtaj/React-Dad-Jokes', icon: 'github' }
 		}
 	];
+
+	$: filteredProjects = projects.slice(0, quantity || projects.length);
 </script>
 
 <div class="container grid pb-5 mx-auto place-items-center sectionContainer" id="work">
-	{#each projects as { title, image, description, deployment, codeLink, technologyStack }, idx (idx)}
+	{#each filteredProjects as { title, image, description, deployment, codeLink, technologyStack }, idx (idx)}
 		<div class="grid grid-flow-col grid-cols-2 projectDetail" class:mt-4={idx > 0}>
 			<div class="self-center p-4 card" class:order-2={idx % 2 !== 0}>
 				<img src={image} class="object-contain" alt="..." />
