@@ -1,0 +1,13 @@
+{
+	"C3crm": "Offizielle CRM-Lösung von Thomasgold Solutions. Das CRM wurde mit unserer eigenen benutzerdefinierten Implementierung auf Basis der Corteza Low Code Platform entwickelt. Der Kalender wurde jedoch separat mit Nuxt 3, Pinia, Tailwindcss, Vueuse, Ant Design und Vuetify erstellt.",
+	"Botsify": "Eine Plattform zum Erstellen von Chatbots, die Ihnen bei der Entwicklung von Chatbots für Ihr Unternehmen hilft. Ich habe an der Frontend-Entwicklung der Plattform gearbeitet. Das Frontend wurde mit Vue 2, Bootstrap und Laravel erstellt, und das Benutzerportal mit Vue 2, Bootstrap, Laravel und Inertiajs. Ich habe auch am Chatbot selbst gearbeitet, der mit Vue 2, Tailwindcss und Laravel entwickelt wurde.",
+	"Introspectify": "Eine Produktivitätsanwendung, die Ihnen hilft, Ihre Zeit zu verfolgen und sich auf Ihre Ziele zu konzentrieren. Alle Daten werden lokal gespeichert, kein Backend.",
+	"Yelpcamp": "Eine Anwendung, die eine Nachbildung von Yelp ist, jedoch für Campingplätze. Verwendet Node, Passportjs, Express, ejs und Bootstrap.",
+	"Chatapp": "Eine einfache Chat-Anwendung, die mit Vue 3/Nuxt 3 und Firebase-Integration erstellt wurde.",
+	"Dadjokes": "Eine App, die Witze von einer API abruft und anzeigt. Hergestellt mit React.",
+	"Trivia": "Eine App, die ich zum Geburtstag eines Freundes mit Vue 2 und Vuex erstellt habe. Es handelt sich um eine Trivia-Anwendung mit verschiedenen Arten von Fragen. Sie verfügt auch über einen einfachen Punktezähler, der dem Benutzer Nachrichten von anderen Freunden freischaltet.",
+	"Morsecode": "Eine einfache Anwendung, die eingegebenen Text in Morsecode-Sound umwandelt.",
+	"Timing": "Eine einfache Anwendung, die die Reaktionszeit des Benutzers auf der Grundlage von zwei verschiedenen Arten von Aufgaben überprüft.",
+	"Dogfinder": "Eine Anwendung, die einige Hunde präsentiert.",
+	"Deckofcards": "Eine Anwendung, die ein Kartenspiel von einer API abruft und anzeigt. Hergestellt mit React."
+}
