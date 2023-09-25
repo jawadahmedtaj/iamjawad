@@ -61,7 +61,9 @@
 		});
 	});
 
-	$: capabilities = $t('about.capabilities.keys') ? $t('about.capabilities.keys').map((key) => key.title) : [];
+	$: capabilities = $t('about.capabilities.keys')
+		? $t('about.capabilities.keys').map((key) => key.title)
+		: [];
 
 	const socials = [
 		{
@@ -90,9 +92,9 @@
 {#key $locale}
 	<div id="top" class="container grid h-screen mx-auto place-items-center justify-items-start">
 		<div class="flex flex-col space-y-10 text-2xl mainHeadings">
-			<h2 class="font-bold h1">{$t('common.hello')} <span class="waveIcon">👋</span></h2>
-			<h4 class="h2">{$t('common.title')}, <strong>{$t('common.job')}</strong></h4>
-			<h5 class="h3">{$t('common.subtitle')}</h5>
+			<p class="font-bold h1">{$t('common.hello')} <span class="waveIcon">👋</span></p>
+			<p class="h2">{$t('common.title')}, <strong>{$t('common.job')}</strong></p>
+			<p class="h3">{$t('common.subtitle')}</p>
 		</div>
 	</div>
 {/key}
@@ -141,8 +143,10 @@
 		<div class="grid grid-flow-row">
 			<p class="pt-2">{$t('about.contact.top')}</p>
 			<p class="pt-2 text-xs">
-				{$t('about.contact.bottom')}<a href="mailto:jawadahmedtaj@gmail.com" class="special-dot" target="_blank"
-					>jawadahmedtaj@gmail.com</a
+				{$t('about.contact.bottom')}<a
+					href="mailto:jawadahmedtaj@gmail.com"
+					class="special-dot"
+					target="_blank">jawadahmedtaj@gmail.com</a
 				>
 			</p>
 		</div>

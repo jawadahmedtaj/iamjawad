@@ -10,7 +10,6 @@
 	import { animate } from 'motion';
 	import 'iconify-icon';
 	import { t, locale } from '$lib/translations';
-	import { page } from '$app/stores';
 
 	onMount(() => {
 		const header = document.querySelector('.headerBar');
