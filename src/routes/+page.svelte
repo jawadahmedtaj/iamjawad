@@ -61,7 +61,7 @@
 		});
 	});
 
-	$: capabilities = $t('about.capabilities.keys').map((key) => key.title);
+	$: capabilities = $t('about.capabilities.keys') ? $t('about.capabilities.keys').map((key) => key.title) : [];
 
 	const socials = [
 		{
