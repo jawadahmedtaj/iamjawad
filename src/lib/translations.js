@@ -2,6 +2,16 @@ import i18n from 'sveltekit-i18n';
 
 /** @type {import('sveltekit-i18n').Config} */
 const config = ({
+    translations: {
+        en: {
+            en: 'English',
+            de: 'German',
+        },
+        de: {
+            en: 'Englisch',
+            de: 'Deutsch',
+        }
+    },
     initLocale: 'en',
     loaders: [
         {

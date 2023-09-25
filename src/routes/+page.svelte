@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { animate, stagger, inView } from 'motion';
 	import Projects from '../lib/components/projects.svelte';
-	import { t } from '$lib/translations';
+	import { t, locale } from '$lib/translations';
 
 	onMount(() => {
 		const text = new SplitType('.mainHeadings');
@@ -93,13 +93,15 @@
 	];
 </script>
 
-<div id="top" class="container grid h-screen mx-auto place-items-center justify-items-start">
-	<div class="flex flex-col space-y-10 text-2xl mainHeadings">
-		<h2 class="font-bold h1">{$t('common.hello')} <span class="waveIcon">👋</span></h2>
-		<h4 class="h2">I'm Jawad Ahmed, <strong>Frontend Developer</strong></h4>
-		<h5 class="h3">I build accessible, inclusive products and digital experiences for the web.</h5>
+{#key $locale}
+	<div id="top" class="container grid h-screen mx-auto place-items-center justify-items-start">
+		<div class="flex flex-col space-y-10 text-2xl mainHeadings">
+			<h2 class="font-bold h1">{$t('common.hello')} <span class="waveIcon">👋</span></h2>
+			<h4 class="h2">{$t('common.title')}, <strong>{$t('common.job')}</strong></h4>
+			<h5 class="h3">{$t('common.subtitle')}</h5>
+		</div>
 	</div>
-</div>
+{/key}
 
 <Projects quantity={4} />
 

@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { animate, inView } from 'motion';
 	import { Tooltip } from '@svelte-plugins/tooltips';
+	import { t } from '$lib/translations';
 
 	export let showLink = true;
 	export let quantity = undefined;
@@ -56,19 +57,16 @@
 		aws: { icon: 'logos:aws', title: 'AWS' },
 		laravel: { icon: 'logos:laravel', title: 'Laravel' },
 		bootstrap: { icon: 'logos:bootstrap', title: 'Bootstrap' },
-		inertia: { icon: 'simple-icons:inertia', title: 'Inertia'},
-		node: { icon: 'logos:nodejs', title: 'Nodejs'},
-		express: { icon: 'skill-icons:expressjs-light', title: 'Express'}
+		inertia: { icon: 'simple-icons:inertia', title: 'Inertia' },
+		node: { icon: 'logos:nodejs', title: 'Nodejs' },
+		express: { icon: 'skill-icons:expressjs-light', title: 'Express' }
 	};
 
-	let projects = [
+	$: projects = [
 		{
 			title: 'C3-CRM',
 			image: '/images/projects/C3CRM.png',
-			description: {
-				en: 'Official CRM solution of Thomasgold solutions. The CRM is built using our own custom Corteza Low Code Platform based implementation. However calendar is made separately using Nuxt 3, Pinia, Tailwindcss, Vueuse, Ant design, and Vuetify',
-				de: ''
-			},
+			description: $t('projects.C3crm'),
 			technologyStack: [
 				'html',
 				'css',
@@ -87,21 +85,24 @@
 		{
 			title: 'Botsify Chat bot',
 			image: '/images/projects/Botsify.png',
-			description: {
-				en: 'A chatbot building platform that helps you build chatbots for your business. I worked on the frontend of the platform. The frontend is built using Vue 2, Bootstrap, and Laravel, and the user portal using Vue 2, bootstrap, laravel, and inertiajs. I also worked on the chatbot itself, which was using developed using Vue 2, Tailwindcss, and Laravel.',
-				de: ''
-			},
-			technologyStack: ['html', 'css', 'js', 'vue', 'tailwindcss', 'bootstrap', 'inertia', 'laravel'],
+			description: $t('projects.Botsify'),
+			technologyStack: [
+				'html',
+				'css',
+				'js',
+				'vue',
+				'tailwindcss',
+				'bootstrap',
+				'inertia',
+				'laravel'
+			],
 			deployment: { link: 'https://botsify.com/', icon: 'aws' },
 			codeLink: { link: '', icon: '' }
 		},
 		{
 			title: 'Introspectify',
 			image: '/images/projects/Introspectify.png',
-			description: {
-				en: 'A productivity app that helps you track your time and stay focused on your goals. All data is stored locally, no backend.',
-				de: ''
-			},
+			description: $t('projects.Introspectify'),
 			technologyStack: ['html', 'css', 'js', 'svelte', 'tailwindcss', 'pwa'],
 			deployment: { link: 'https://introspectify.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/introspectify', icon: 'github' }
@@ -109,10 +110,7 @@
 		{
 			title: 'YelpCamp',
 			image: '/images/projects/YelpCamp.png',
-			description: {
-				en: 'An application that is a replica of Yelp, but for camping site. Using Node, Passportjs, Express, ejs, and bootstrap.',
-				de: ''
-			},
+			description: $t('projects.Yelpcamp'),
 			technologyStack: ['html', 'css', 'js', 'node', 'express', 'bootstrap'],
 			deployment: { link: '', icon: '' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/YelpCamp', icon: 'github' }
@@ -120,10 +118,7 @@
 		{
 			title: 'Chat App',
 			image: '/images/projects/ChatApp.png',
-			description: {
-				en: 'A simple chat application made using Vue 3/Nuxt 3 with firebase integration',
-				de: ''
-			},
+			description: $t('projects.Chatapp'),
 			technologyStack: [
 				'html',
 				'css',
@@ -143,10 +138,7 @@
 		{
 			title: 'Dad Jokes',
 			image: '/images/projects/DadJokes.png',
-			description: {
-				en: 'An app that fetches dad jokes from an API and displays them. Made using React.',
-				de: ''
-			},
+			description: $t('projects.Dadjokes'),
 			technologyStack: ['html', 'css', 'js', 'react'],
 			deployment: { link: 'https://dadjokesapp-jawad.netlify.app', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/React-Dad-Jokes', icon: 'github' }
@@ -154,10 +146,7 @@
 		{
 			title: 'Trivia Application',
 			image: '/images/projects/Trivia.png',
-			description: {
-				en: "An app that I made using Vue 2, vuex for a friend's birthday. It is a trivia application that have options for multiple type of questions. It has a simple score counter as well that unlocks messages from other friends for the user.",
-				de: ''
-			},
+			description: $t('projects.Trivia'),
 			technologyStack: ['html', 'css', 'js', 'vue'],
 			deployment: { link: 'https://trivia-sparky.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/triviaApp', icon: 'github' }
@@ -165,10 +154,7 @@
 		{
 			title: 'Words to Morse Code',
 			image: '/images/projects/wordstomorse.png',
-			description: {
-				en: 'A simple application that converts input text into morse code sound.',
-				de: ''
-			},
+			description: $t('projects.Morsecode'),
 			technologyStack: ['html', 'css', 'js', 'react'],
 			deployment: { link: 'https://words2morsecode.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/words-to-morse-code', icon: 'github' }
@@ -176,10 +162,7 @@
 		{
 			title: 'Task timing application',
 			image: '/images/projects/Task-timing.png',
-			description: {
-				en: 'A simple application that checks the reaction time of the user based on 2 different kinds of tasks.',
-				de: ''
-			},
+			description: $t('projects.Timing'),
 			technologyStack: ['html', 'css', 'js', 'react'],
 			deployment: { link: 'https://usabilitytask5.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/Usability-Tasks', icon: 'github' }
@@ -187,10 +170,7 @@
 		{
 			title: 'Dog finder application',
 			image: '/images/projects/Dog-finder.png',
-			description: {
-				en: 'An application that showcases a few dogs.',
-				de: ''
-			},
+			description: $t('projects.Dogfinder'),
 			technologyStack: ['html', 'css', 'js', 'react', 'pwa'],
 			deployment: { link: 'https://dog-finder-ja.netlify.app/dogs', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/dog-finder', icon: 'github' }
@@ -198,10 +178,7 @@
 		{
 			title: 'Deck of cards',
 			image: '/images/projects/Deck-of-cards.png',
-			description: {
-				en: 'An application that fetches a deck of cards from an API and displays them. Made using React.',
-				de: ''
-			},
+			description: $t('projects.Deckofcards'),
 			technologyStack: ['html', 'css', 'js', 'react', 'pwa'],
 			deployment: { link: 'https://deckofcards-ja.netlify.app/', icon: 'netlify' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/deck-of-cards', icon: 'github' }
@@ -227,7 +204,7 @@
 				class:order-2={idx % 2 !== 0}
 			>
 				<div class="self-center h2">{title}</div>
-				<div class="self-center pt-2 h4">{description.en}</div>
+				<div class="self-center pt-2 h4">{description}</div>
 				<div class="grid justify-start grid-flow-col pt-2 text-2xl">
 					{#if deployment.link}
 						<Tooltip content="Live Demo">

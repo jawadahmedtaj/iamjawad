@@ -9,12 +9,16 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	import { animate } from 'motion';
 	import 'iconify-icon';
-	import { locales, locale } from '$lib/translations';
+	import { locale } from '$lib/translations';
 
 	onMount(() => {
 		const header = document.querySelector('.headerBar');
 
 		animate(header, { opacity: [0, 1], y: [0, 5, 0] }, { duration: 1 });
+
+		const storedLocale = sessionStorage.getItem('locale') || 'en';
+
+		$locale = storedLocale;
 	});
 
 	const handleAnchorClick = (event) => {
@@ -49,15 +53,26 @@
 				<a href="#contact" on:click={handleAnchorClick} class="p-2 badge variant-filled">Contact</a>
 				<LightSwitch />
 				{#if $locale === 'en'}
-					<button class="badge-icon variant-filled-primary" on:click={() => $locale = 'de'}>
+					<button
+						class="badge-icon variant-filled-primary"
+						on:click={() => {
+							$locale = 'de';
+							sessionStorage.setItem('locale', 'de');
+						}}
+					>
 						<iconify-icon icon="emojione:flag-for-germany" />
 					</button>
 				{:else}
-					<button class="badge-icon variant-filled-primary" on:click={() => $locale = 'en'}>
+					<button
+						class="badge-icon variant-filled-primary"
+						on:click={() => {
+							$locale = 'en';
+							sessionStorage.setItem('locale', 'en');
+						}}
+					>
 						<iconify-icon icon="emojione:flag-for-united-kingdom" />
 					</button>
 				{/if}
-				<p>{$locale}</p>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
