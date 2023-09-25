@@ -132,7 +132,7 @@
 		<p class="text-4xl font-semibold">{$t('about.capabilities.title')}</p>
 		<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 			{#each capabilities as capability, idx (idx)}
-				<button class="btn variant-outline-primary w-44">{capability}</button>
+				<button class="w-40 btn variant-outline-primary">{capability}</button>
 			{/each}
 		</div>
 	</div>
