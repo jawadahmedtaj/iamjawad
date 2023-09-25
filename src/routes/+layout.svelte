@@ -54,7 +54,7 @@
 
 <!-- App Shell -->
 <AppShell>
-	<svelte:fragment slot="header">
+	<svelte:fragment slot="pageHeader">
 		<!-- App Bar -->
 		<AppBar
 			background="bg-transparent headerBar"
