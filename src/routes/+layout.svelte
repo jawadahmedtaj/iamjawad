@@ -20,6 +20,23 @@
 		const storedLocale = sessionStorage.getItem('locale') || 'en';
 
 		$locale = storedLocale;
+
+		const circle = document.querySelector('.circle');
+		document.addEventListener('mousemove', (e) => {
+			const height = circle.offsetHeight;
+			const width = circle.offsetWidth;
+
+			if (e.target.classList.contains('special-dot')) {
+				circle.classList.add('special');
+			} else {
+				circle.classList.remove('special');
+			}
+
+			setTimeout(() => {
+				circle.style.left = `${e.clientX - width / 2}px`;
+				circle.style.top = `${e.clientY - height / 2}px`;
+			}, 20);
+		});
 	});
 
 	const handleAnchorClick = (event) => {
@@ -34,6 +51,8 @@
 	};
 </script>
 
+<div class="hidden circle special md:block" />
+
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
@@ -44,18 +63,18 @@
 			class="container flex justify-start mx-auto"
 		>
 			<svelte:fragment slot="lead">
-				<a href="/">
-					<strong class="text-xl uppercase"> Jawad A. </strong>
+				<a href="/" class="special-dot">
+					<strong class="text-xl uppercase special-dot"> Jawad A. </strong>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled"
+				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled special-dot"
 					>{$t('common.work')}</a
 				>
-				<a href="#about" on:click={handleAnchorClick} class="p-2 badge variant-filled"
+				<a href="#about" on:click={handleAnchorClick} class="p-2 badge variant-filled special-dot"
 					>{$t('common.about')}</a
 				>
-				<a href="#contact" on:click={handleAnchorClick} class="p-2 badge variant-filled"
+				<a href="#contact" on:click={handleAnchorClick} class="p-2 badge variant-filled special-dot"
 					>{$t('common.contact')}</a
 				>
 				<LightSwitch />
@@ -86,3 +105,18 @@
 	<!-- Page Route Content -->
 	<slot />
 </AppShell>
+
+<style>
+	.circle {
+		@apply h-6 w-6 rounded-full border-black border-2 absolute z-10 opacity-50 pointer-events-none transition-colors;
+		transition-property: width, height;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 300ms;
+	}
+	.special {
+		@apply h-2 w-2 opacity-100 bg-error-900 transition-colors z-50;
+		transition-property: width, height;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 300ms;
+	}
+</style>

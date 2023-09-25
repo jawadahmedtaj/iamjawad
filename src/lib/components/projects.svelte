@@ -208,15 +208,19 @@
 				<div class="grid justify-start grid-flow-col pt-2 text-2xl">
 					{#if deployment.link}
 						<Tooltip content="Live Demo">
-							<a href={deployment.link} target="_blank" class="btn variant-filled-primary">
-								<iconify-icon icon={technologyIcons[deployment.icon].icon} />
+							<a href={deployment.link} target="_blank" class="btn variant-filled-primary special-dot">
+								<iconify-icon icon={technologyIcons[deployment.icon].icon} class="special-dot" />
 							</a>
 						</Tooltip>
 					{/if}
 					{#if codeLink.link}
 						<Tooltip content="Code">
-							<a href={codeLink.link} target="_blank" class="ml-2 btn variant-filled-primary">
-								<iconify-icon icon={technologyIcons[codeLink.icon].icon} />
+							<a
+								href={codeLink.link}
+								target="_blank"
+								class="ml-2 btn variant-filled-primary special-dot"
+							>
+								<iconify-icon icon={technologyIcons[codeLink.icon].icon} class="special-dot" />
 							</a>
 						</Tooltip>
 					{/if}
@@ -235,8 +239,8 @@
 	{#if showLink}
 		<a
 			href="/projects"
-			class="flex mt-10 place-content-center justify-self-end h4 allProjects btn variant-filled-primary"
-			>See all project <iconify-icon icon="carbon:chevron-right" />
+			class="flex mt-10 place-content-center justify-self-end h4 allProjects btn variant-filled-primary special-dot"
+			>{$t('projects.title')} <iconify-icon icon="carbon:chevron-right" class="special-dot" />
 		</a>
 	{/if}
 </div>

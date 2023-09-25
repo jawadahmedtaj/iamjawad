@@ -100,7 +100,7 @@
 <Projects quantity={4} />
 
 <div id="about" class="container grid grid-flow-row mx-auto pb-9 place-content-start aboutSection">
-	<p class="text-2xl font-semibold">About</p>
+	<p class="text-2xl font-semibold">{$t('common.about')}</p>
 	<div class="pt-10 text-center aboutSection">
 		<img src="/images/self.png" class="hidden float-left object-contain w-52 md:block" alt="..." />
 		<div class="text-justify text-md lg:text-xl aboutTexts">
@@ -141,16 +141,16 @@
 		<div class="grid grid-flow-row">
 			<p class="pt-2">{$t('about.contact.top')}</p>
 			<p class="pt-2 text-xs">
-				{$t('about.contact.bottom')}<a href="mailto:jawadahmedtaj@gmail.com" target="_blank"
+				{$t('about.contact.bottom')}<a href="mailto:jawadahmedtaj@gmail.com" class="special-dot" target="_blank"
 					>jawadahmedtaj@gmail.com</a
 				>
 			</p>
 		</div>
 		<div class="grid grid-cols-1 gap-1 md:grid-cols-2 xl:grid-cols-4">
 			{#each socials as social, idx (idx)}
-				<button class="w-40 place-self-center btn variant-outline-primary">
-					<a href={social.link} target="_blank">
-						<iconify-icon icon={social.icon} />
+				<button class="w-40 place-self-center btn variant-outline-primary special-dot">
+					<a href={social.link} target="_blank" class="special-dot">
+						<iconify-icon icon={social.icon} class="special-dot" />
 						{social.name}
 					</a>
 				</button>

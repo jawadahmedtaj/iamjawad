@@ -1,4 +1,5 @@
 {
+	"title": "See all projects",
 	"C3crm": "Official CRM solution of Thomasgold solutions. The CRM is built using our own custom Corteza Low Code Platform based implementation. However calendar is made separately using Nuxt 3, Pinia, Tailwindcss, Vueuse, Ant design, and Vuetify.",
 	"Botsify": "A chatbot building platform that helps you build chatbots for your business. I worked on the frontend of the platform. The frontend is built using Vue 2, Bootstrap, and Laravel, and the user portal using Vue 2, bootstrap, laravel, and inertiajs. I also worked on the chatbot itself, which was using developed using Vue 2, Tailwindcss, and Laravel.",
 	"Introspectify": "A productivity app that helps you track your time and stay focused on your goals. All data is stored locally, no backend.",
