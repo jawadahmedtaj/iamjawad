@@ -1,0 +1,29 @@
+{
+	"p1": "Mit über sieben Jahren Erfahrung in der Branche habe ich meine Fähigkeiten und Expertise geschärft, um außergewöhnliche Ergebnisse in der Welt der Remote-Arbeit zu liefern. Meine Reise in der digitalen Welt war nichts weniger als aufregend, und ich freue mich, meine Arbeit und Erfahrungen mit Ihnen teilen zu können.",
+	"p2": "Im Laufe meiner Karriere hatte ich das Privileg, remote an einer Vielzahl von Projekten zu arbeiten, die verschiedene Branchen und Technologien abdecken. Von meinem Heimbüro aus habe ich mit Teams auf der ganzen Welt zusammengearbeitet und innovative Lösungen geliefert, die einen bleibenden Eindruck hinterlassen haben.",
+	"p3": "Eine der lohnendsten Aspekte meiner Karriere war es, mitzuerleben, wie die Projekte, an denen ich mitgearbeitet habe, von Hunderten von Nutzern angenommen wurden. Zu wissen, dass meine Arbeit einen positiven Unterschied im Leben von Menschen auf der ganzen Welt gemacht hat, erfüllt mich wirklich. Es ist ein Zeugnis für die Hingabe und Leidenschaft, die ich in jedes Projekt einbringe, das ich angehe.",
+	"p4": "Wenn Sie meine Portfolio erkunden, finden Sie eine vielfältige Sammlung von Arbeiten, wobei jedes Projekt ein Beweis für mein Engagement für Exzellenz und meine Fähigkeit ist, sich verschiedenen Herausforderungen anzupassen. Von Webanwendungen bis zu mobilen Apps, von Design bis zur Entwicklung hatte ich die Gelegenheit, verschiedene Aspekte der digitalen Landschaft zu erkunden.",
+	"p5": "Ich glaube, dass Innovation eine kontinuierliche Reise ist, und ich freue mich darauf, die Grenzen dessen, was in der Welt der Technologie möglich ist, weiter auszuloten. Ob Sie hier sind, um mehr über meine bisherige Arbeit zu erfahren, potenzielle Zusammenarbeitsmöglichkeiten zu erkunden oder einfach inspiriert zu werden, lade ich Sie ein, in mein Portfolio einzutauchen und sich mir auf dieser aufregenden Reise anzuschließen.",
+	"p6": "Vielen Dank für Ihren Besuch, und ich freue mich darauf, mich mit Ihnen zu vernetzen. Gemeinsam können wir etwas Außergewöhnliches schaffen.",
+
+	"capabilities": {
+		"title": "Fähigkeiten",
+		"keys": [
+			{ "title": "Webentwicklung" },
+			{ "title": "Mobile Entwicklung" },
+			{ "title": "UI/UX Design" },
+			{ "title": "Projektmanagement" },
+			{ "title": "Teamführung" },
+			{ "title": "Mentoring" },
+			{ "title": "Kommunikation" },
+			{ "title": "Problem lösen" },
+			{ "title": "Zeitmanagement" }
+		]
+	},
+
+	"contact": {
+		"title": "Kontakt",
+		"top": "Möchten Sie Kontakt aufnehmen?",
+		"bottom": "Schicken Sie mir eine Nachricht mit den Details Ihres Projekts an "
+	}
+}

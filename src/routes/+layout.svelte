@@ -9,7 +9,8 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	import { animate } from 'motion';
 	import 'iconify-icon';
-	import { locale } from '$lib/translations';
+	import { t, locale } from '$lib/translations';
+	import { page } from '$app/stores';
 
 	onMount(() => {
 		const header = document.querySelector('.headerBar');
@@ -48,9 +49,15 @@
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled">Work</a>
-				<a href="#about" on:click={handleAnchorClick} class="p-2 badge variant-filled">About</a>
-				<a href="#contact" on:click={handleAnchorClick} class="p-2 badge variant-filled">Contact</a>
+				<a href="#work" on:click={handleAnchorClick} class="p-2 badge variant-filled"
+					>{$t('common.work')}</a
+				>
+				<a href="#about" on:click={handleAnchorClick} class="p-2 badge variant-filled"
+					>{$t('common.about')}</a
+				>
+				<a href="#contact" on:click={handleAnchorClick} class="p-2 badge variant-filled"
+					>{$t('common.contact')}</a
+				>
 				<LightSwitch />
 				{#if $locale === 'en'}
 					<button

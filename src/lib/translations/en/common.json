@@ -2,5 +2,9 @@
 	"hello": "Hello",
 	"title": "I'm Jawad Ahmed",
 	"job": "Frontend Developer",
-	"subtitle": "I build accessible, inclusive products and digital experiences for the web."
+	"subtitle": "I build accessible, inclusive products and digital experiences for the web.",
+
+	"work": "Work",
+	"about": "About",
+	"contact": "Contact"
 }

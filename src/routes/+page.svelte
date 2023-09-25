@@ -61,13 +61,7 @@
 		});
 	});
 
-	const capabilities = [
-		'Mentorship',
-		'Team player',
-		'Communication',
-		'Problem solving',
-		'Time management'
-	];
+	$: capabilities = $t('about.capabilities.keys').map((key) => key.title);
 
 	const socials = [
 		{
@@ -111,38 +105,22 @@
 		<img src="/images/self.png" class="hidden float-left object-contain w-52 md:block" alt="..." />
 		<div class="text-justify text-md lg:text-xl aboutTexts">
 			<p>
-				With over seven years of experience in the field, I have honed my skills and expertise to
-				deliver exceptional results in the world of remote work. My journey in the digital realm has
-				been nothing short of exhilarating, and I am thrilled to share my work and experiences with
-				you.
+				{$t('about.p1')}
 			</p>
 			<p class="mt-3">
-				Throughout my career, I have had the privilege of working remotely on a wide range of
-				projects, spanning various industries and technologies. From the comfort of my home office,
-				I have collaborated with teams across the globe, delivering innovative solutions that have
-				left a lasting impact.
+				{$t('about.p2')}
 			</p>
 			<p class="mt-3">
-				One of the most rewarding aspects of my career has been witnessing the projects I've
-				contributed to being embraced by hundreds of users. Knowing that my work has made a positive
-				difference in the lives of people around the world is truly fulfilling. It's a testament to
-				the dedication and passion I pour into every project I undertake.
+				{$t('about.p3')}
 			</p>
 			<p class="mt-3">
-				As you explore my portfolio, you will find a diverse collection of work, each project a
-				testament to my commitment to excellence and my ability to adapt to different challenges.
-				From web applications to mobile apps, from design to development, I've had the opportunity
-				to explore various facets of the digital landscape.
+				{$t('about.p4')}
 			</p>
 			<p class="mt-3">
-				I believe that innovation is a continuous journey, and I am excited to continue pushing the
-				boundaries of what's possible in the world of technology. Whether you're here to learn more
-				about my past work, explore potential collaboration opportunities, or simply get inspired, I
-				invite you to dive into my portfolio and join me on this exciting journey.
+				{$t('about.p5')}
 			</p>
 			<p class="mt-3">
-				Thank you for visiting, and I look forward to connecting with you. Together, we can create
-				something extraordinary.
+				{$t('about.p6')}
 			</p>
 		</div>
 	</div>
@@ -151,27 +129,26 @@
 	<div
 		class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col pb-9 place-items-center"
 	>
-		<p class="text-4xl font-semibold">Capabilities</p>
+		<p class="text-4xl font-semibold">{$t('about.capabilities.title')}</p>
 		<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 			{#each capabilities as capability, idx (idx)}
 				<button class="btn variant-outline-primary w-44">{capability}</button>
 			{/each}
 		</div>
 	</div>
-	<p class="text-4xl font-semibold text-center sm:text-start">Contact</p>
+	<p class="text-4xl font-semibold text-center sm:text-start">{$t('about.contact.title')}</p>
 	<div id="contact" class="grid justify-center grid-flow-row sm:justify-between sm:grid-flow-col">
 		<div class="grid grid-flow-row">
-			<p class="pt-2">Need to get in touch?</p>
+			<p class="pt-2">{$t('about.contact.top')}</p>
 			<p class="pt-2 text-xs">
-				Shoot me a note with your project details at <a
-					href="mailto:jawadahmedtaj@gmail.com"
-					target="_blank">jawadahmedtaj@gmail.com</a
+				{$t('about.contact.bottom')}<a href="mailto:jawadahmedtaj@gmail.com" target="_blank"
+					>jawadahmedtaj@gmail.com</a
 				>
 			</p>
 		</div>
 		<div class="grid grid-cols-1 gap-1 md:grid-cols-2 xl:grid-cols-4">
 			{#each socials as social, idx (idx)}
-				<button class="w-44 place-self-center btn variant-outline-primary">
+				<button class="w-40 place-self-center btn variant-outline-primary">
 					<a href={social.link} target="_blank">
 						<iconify-icon icon={social.icon} />
 						{social.name}

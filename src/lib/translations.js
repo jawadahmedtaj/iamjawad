@@ -13,12 +13,20 @@ const config = ({
         }
     },
     initLocale: 'en',
+    preprocess: 'preserveArrays',
     loaders: [
         {
             locale: 'en',
             key: 'common',
             loader: async () => (
                 await import('./translations/en/common.json')
+            ).default,
+        },
+        {
+            locale: 'en',
+            key: 'about',
+            loader: async () => (
+                await import('./translations/en/about.json')
             ).default,
         },
         {
@@ -37,6 +45,13 @@ const config = ({
         },
         {
             locale: 'de',
+            key: 'about',
+            loader: async () => (
+                await import('./translations/de/about.json')
+            ).default,
+        },
+        {
+            locale: 'de',
             key: 'projects',
             loader: async () => (
                 await import('./translations/de/projects.json')
@@ -45,4 +60,4 @@ const config = ({
     ],
 });
 
-export const { t, locale, locales, loading, loadTranslations } = new i18n(config);
+export const { t, locale, locales, loading, loadTranslations, setLocale } = new i18n(config);
