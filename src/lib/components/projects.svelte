@@ -59,7 +59,9 @@
 		bootstrap: { icon: 'logos:bootstrap', title: 'Bootstrap' },
 		inertia: { icon: 'simple-icons:inertia', title: 'Inertia' },
 		node: { icon: 'logos:nodejs', title: 'Nodejs' },
-		express: { icon: 'skill-icons:expressjs-light', title: 'Express' }
+		express: { icon: 'skill-icons:expressjs-light', title: 'Express' },
+		mui: { icon: 'devicon:materialui', title: 'Material UI' },
+		stripe: { icon: 'logos:stripe', title: 'Stripe' }
 	};
 
 	$: projects = [
@@ -83,21 +85,12 @@
 			codeLink: { link: '', icon: '' }
 		},
 		{
-			title: 'Botsify Chat bot',
-			image: '/images/projects/Botsify.png',
-			description: $t('projects.Botsify'),
-			technologyStack: [
-				'html',
-				'css',
-				'js',
-				'vue',
-				'tailwindcss',
-				'bootstrap',
-				'inertia',
-				'laravel'
-			],
-			deployment: { link: 'https://botsify.com/', icon: 'aws' },
-			codeLink: { link: '', icon: '' }
+			title: 'Squadkicks',
+			image: '/images/projects/Squadkicks.png',
+			description: $t('projects.Squadkicks'),
+			technologyStack: ['html', 'css', 'js', 'laravel'],
+			deployment: { link: 'https://squadkicks.com/', icon: 'aws' },
+			codeLink: { link: '', icon: 'github' }
 		},
 		{
 			title: 'Introspectify',
@@ -114,6 +107,47 @@
 			technologyStack: ['html', 'css', 'js', 'node', 'express', 'bootstrap'],
 			deployment: { link: '', icon: '' },
 			codeLink: { link: 'https://github.com/jawadahmedtaj/YelpCamp', icon: 'github' }
+		},
+		{
+			title: 'Beastlyads',
+			image: '/images/projects/Beastlyads.png',
+			description: $t('projects.Beastlyads'),
+			technologyStack: ['html', 'css', 'js', 'node', 'react', 'tailwindcss', 'mui'],
+			deployment: { link: 'https://beastlyads.netlify.app', icon: 'netlify' },
+			codeLink: { link: '', icon: 'github' }
+		},
+		{
+			title: 'VLC',
+			image: '/images/projects/VLC.png',
+			description: $t('projects.VLC'),
+			technologyStack: ['html', 'css', 'js', 'node', 'vue', 'vuetify', 'stripe'],
+			deployment: { link: 'http://vlc.testedwebsite.com/', icon: 'netlify' },
+			codeLink: { link: '', icon: 'github' }
+		},
+		{
+			title: 'Zachry Clothing',
+			image: '/images/projects/Zachryecommerce.png',
+			description: $t('projects.Zachryecommerce'),
+			technologyStack: ['html', 'css', 'js', 'node', 'vue', 'nuxt', 'mui', 'stripe'],
+			deployment: { link: 'https://zachary-clothing.netlify.app/', icon: 'aws' },
+			codeLink: { link: '', icon: 'github' }
+		},
+		{
+			title: 'Botsify Chat bot',
+			image: '/images/projects/Botsify.png',
+			description: $t('projects.Botsify'),
+			technologyStack: [
+				'html',
+				'css',
+				'js',
+				'vue',
+				'tailwindcss',
+				'bootstrap',
+				'inertia',
+				'laravel'
+			],
+			deployment: { link: 'https://botsify.com/', icon: 'aws' },
+			codeLink: { link: '', icon: '' }
 		},
 		{
 			title: 'Chat App',
@@ -208,7 +242,11 @@
 				<div class="grid justify-start grid-flow-col pt-2 text-2xl">
 					{#if deployment.link}
 						<Tooltip content="Live Demo">
-							<a href={deployment.link} target="_blank" class="btn variant-filled-primary special-dot">
+							<a
+								href={deployment.link}
+								target="_blank"
+								class="btn variant-filled-primary special-dot"
+							>
 								<iconify-icon icon={technologyIcons[deployment.icon].icon} class="special-dot" />
 							</a>
 						</Tooltip>

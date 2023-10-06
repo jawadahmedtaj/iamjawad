@@ -10,5 +10,9 @@
 	"Morsecode": "Eine einfache Anwendung, die eingegebenen Text in Morsecode-Sound umwandelt.",
 	"Timing": "Eine einfache Anwendung, die die Reaktionszeit des Benutzers auf der Grundlage von zwei verschiedenen Arten von Aufgaben überprüft.",
 	"Dogfinder": "Eine Anwendung, die einige Hunde präsentiert.",
-	"Deckofcards": "Eine Anwendung, die ein Kartenspiel von einer API abruft und anzeigt. Hergestellt mit React."
+	"Deckofcards": "Eine Anwendung, die ein Kartenspiel von einer API abruft und anzeigt. Hergestellt mit React.",
+	"Squadkicks": "Eine einfache Anwendung, die Streamer mit ihren Zuschauern abgleicht. Hergestellt mit Laravel.",
+	"Beastlyads": "Eine Anzeigenwebsite zum Kaufen und Verkaufen verschiedener gebrauchter Artikel. Hergestellt mit React, Next.js, MUI, Tailwindcss und Node.js.",
+	"Zachryecommerce": "Eine E-Commerce-Website für einen Kunden. Hergestellt mit Vue, Nuxt, Vuetify, Tailwindcss, Node.js und Stripe.",
+	"VLC": "Eine Anwendung, die im Wesentlichen ein Klon von Netflix für einen unserer Kunden ist. Hergestellt mit Vue, Vuetify, Laravel und Stripe."
 }

@@ -10,5 +10,9 @@
 	"Morsecode": "A simple application that converts input text into morse code sound.",
 	"Timing": "A simple application that checks the reaction time of the user based on 2 different kinds of tasks.",
 	"Dogfinder": "An application that showcases a few dogs.",
-	"Deckofcards": "An application that fetches a deck of cards from an API and displays them. Made using React."
+	"Deckofcards": "An application that fetches a deck of cards from an API and displays them. Made using React.",
+	"Squadkicks": "A simple application that matches streamers with their viewers. Made using Laravel.",
+	"Beastlyads": "A listing website to buy and sell different used articles. Made using React, Next.js, MUI, Tailwindcss, and Node.js",
+	"Zachryecommerce": "An ecommerce website for a client. Made using Vue, Nuxt, Vuetify, Tailwindcss, Node.js, and Stripe",
+	"VLC": "An application which is essentially a clone of Netflix for one of the clients. Made using Vue, Vuetify, Laravel, and Stripe"
 }
